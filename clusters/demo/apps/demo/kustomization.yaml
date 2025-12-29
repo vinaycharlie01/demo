@@ -1,12 +1,5 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1
+apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-metadata:
-  name: demo-app
-  namespace: flux-system
-spec:
-  interval: 1m
-  path: ./clusters/demo/apps/demo
-  prune: true
-  sourceRef:
-    kind: GitRepository
-    name: flux-system
+resources:
+  - helmrepository.yaml
+  - helmrelease.yaml
