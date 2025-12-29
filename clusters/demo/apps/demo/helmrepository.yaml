@@ -5,4 +5,4 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: http://158.176.9.57:8080
+  url: https://stefanprodan.github.io/podinfo
